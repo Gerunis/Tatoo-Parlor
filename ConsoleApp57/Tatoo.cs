@@ -32,6 +32,7 @@ namespace TatooParlor
     /// <summary>
     /// части тела
     /// </summary>
+    /// 
     public enum BodyPart
     {
         Back,
