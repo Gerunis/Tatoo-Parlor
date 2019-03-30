@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TatooParlor
 {
+    /// <summary>
+    /// список мастеров
+    /// </summary>
     public class TatooParlor
     {
         public List<Master> Masters { get; set; }

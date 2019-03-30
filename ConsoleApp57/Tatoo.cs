@@ -6,19 +6,40 @@ using System.Threading.Tasks;
 
 namespace TatooParlor
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Tatoo
     {
-        public static List<string> TatooStyles = new List<string>() { };
+        /// <summary>
+        /// список стилей
+        /// </summary>
+        public static List<string> TatooStyles = new List<string>()
+        {
+            "Blackwork", "Dotwork", "Celtic", "Minimalism", "Watercolor"
+        };
 
+        /// <summary>
+        /// фото тату
+        /// </summary>
         public byte[] Drawing { get; set; }
 
         public bool Monochrome { get; set; }
 
-        public string Style { get; set; }
+        //public string Style { get; set; }
     }
 
+    /// <summary>
+    /// части тела
+    /// </summary>
     public enum BodyPart
     {
-
+        Back,
+        Leg,
+        Arm,
+        Chest,
+        Shoulder,
+        Neck,
+        Face
     }
 }
