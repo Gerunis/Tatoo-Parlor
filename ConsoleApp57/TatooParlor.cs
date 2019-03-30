@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp57
+namespace TatooParlor
 {
-    class Program
+    public class TatooParlor
     {
-        static void Main(string[] args)
-        {
-        }
+        public List<Master> Masters { get; set; }
+        
     }
+    
 }
