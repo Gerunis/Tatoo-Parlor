@@ -13,11 +13,11 @@ namespace TatooParlor
     {        
         public string Name { get; set; }
 
-        public int Age { get; set; }
+        //public int Age { get; set; }
 
         public bool[] Photo { get; set; }
 
-        public DateTime WorkExperience { get; set; }
+       // public DateTime WorkExperience { get; set; }
 
         /// <summary>
         /// описание: где учился, сколько занимается и т.п

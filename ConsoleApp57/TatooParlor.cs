@@ -12,6 +12,10 @@ namespace TatooParlor
     public class TatooParlor
     {
         public List<Master> Masters { get; set; }
+
+        public List<Registration> Journal { get; set; }
+
+        public List<Comments> CommetsPage { get; set; }
         
     }
     

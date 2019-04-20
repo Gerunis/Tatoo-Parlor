@@ -23,10 +23,6 @@ namespace TatooParlor
         /// фото тату
         /// </summary>
         public byte[] Drawing { get; set; }
-
-        public bool Monochrome { get; set; }
-
-        //public string Style { get; set; }
     }
 
     /// <summary>
