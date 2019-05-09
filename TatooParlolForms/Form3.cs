@@ -21,29 +21,25 @@ namespace TatooParlolForms
 
         public Comments Comments { get; set; }
 
-        private void ServiceMaitananceForm_Load(object sender, EventArgs e)
-        {
-            textBox1.Text = Comments.CustumersName;
-            dateTimePicker1.Value = Comments.VisitDate;
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Comments.Comment = textBox1.Text;
+            Comments.CustumersName = textBox1.Text;
             Comments.MastersName = textBox2.Text;
             Comments.Comment = textBox3.Text;
-            Comments.VisitDate = dateTimePicker1.Value;
-
-           
+            Comments.VisitDate = dateTimePicker1.Value;           
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Comments.Comment;
+            textBox1.Text = Comments.CustumersName;
             textBox2.Text = Comments.MastersName;
             textBox3.Text = Comments.Comment;
             dateTimePicker1.Value = Comments.VisitDate;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

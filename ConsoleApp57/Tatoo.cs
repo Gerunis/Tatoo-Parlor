@@ -14,10 +14,12 @@ namespace TatooParlor
         /// <summary>
         /// список стилей
         /// </summary>
-        public static List<string> TatooStyles = new List<string>()
-        {
-            "Blackwork", "Dotwork", "Celtic", "Minimalism", "Watercolor"
-        };
+        //public static List<string> TatooStyles = new List<string>()
+        //{
+        //    "Blackwork", "Dotwork", "Celtic", "Minimalism", "Watercolor"
+        //};
+
+        
 
         /// <summary>
         /// фото тату
@@ -29,14 +31,14 @@ namespace TatooParlor
     /// части тела
     /// </summary>
     /// 
-    public enum BodyPart
-    {
-        Back,
-        Leg,
-        Arm,
-        Chest,
-        Shoulder,
-        Neck,
-        Face
-    }
+    //public enum BodyPart
+    //{
+    //    Back,
+    //    Leg,
+    //    Arm,
+    //    Chest,
+    //    Shoulder,
+    //    Neck,
+    //    Face
+    //}
 }

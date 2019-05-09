@@ -12,12 +12,8 @@ namespace TatooParlor
     public class Master
     {        
         public string Name { get; set; }
-
-        //public int Age { get; set; }
-
-        public bool[] Photo { get; set; }
-
-       // public DateTime WorkExperience { get; set; }
+        
+        public bool[] Photo { get; set; }      
 
         /// <summary>
         /// описание: где учился, сколько занимается и т.п
@@ -34,7 +30,7 @@ namespace TatooParlor
         /// <summary>
         /// график работы и свободные дни
         /// </summary>
-        public Dictionary<DateTime, Registration> TimeTable { get; set; }
+        //public Dictionary<DateTime, Registration> TimeTable { get; set; }
 
     }
 }
