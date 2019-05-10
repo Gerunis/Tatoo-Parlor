@@ -16,11 +16,13 @@ namespace TatooParlor
         public List<Registration> Journal { get; set; }
 
         public List<Comments> CommetsPage { get; set; }
+        public byte[] Drawing { get; set; }
+              
 
         //public BodyPart BodyPart { get; set; }
 
         //public Tatoo Tatoo { get; set; }
-        
+
     }
     
 }

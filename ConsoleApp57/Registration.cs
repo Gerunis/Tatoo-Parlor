@@ -48,21 +48,9 @@ namespace TatooParlor
 
         public override string ToString()
         {
-            return $"Имя: {VisitorName}, \t Возраст: {Age}, \t Телефон: {Contacts}, \t Часть тела: {BodyPart},\t" +
-                $"Cтиль тату: {TatooStyles}, \t Мастер: {Master}, \t Дата: {DateToVisit}";
+            return $"Имя: {VisitorName}, Возраст: {Age}, Телефон: {Contacts}, Часть тела: {BodyPart},"+
+             $"Cтиль тату: {TatooStyles}, Мастер: {Master}, Дата: {DateToVisit}";
         }
 
-    }
-
-
-    /// <summary>
-    /// пол посетителя
-    /// </summary>
-    //public enum Gender
-    //{
-    //    Male,
-    //    Female
-    //}
-
-    
+    }    
 }

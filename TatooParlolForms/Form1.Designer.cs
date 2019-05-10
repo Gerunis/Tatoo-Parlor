@@ -42,24 +42,25 @@
             this.Master1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Master3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Master1)).BeginInit();
-            this.tabPage1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -202,13 +203,67 @@
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.pictureBox1);
+            this.tabPage4.Controls.Add(this.button5);
+            this.tabPage4.Controls.Add(this.listBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(778, 451);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Запись";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(505, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 27);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Отменить запись";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TatooParlolForms.Properties.Resources.back;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(381, 20);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(118, 27);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Записаться";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(11, 67);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(670, 329);
+            this.listBox2.TabIndex = 0;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.listBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(778, 432);
+            this.tabPage1.Size = new System.Drawing.Size(778, 451);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Отзывы";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -232,60 +287,6 @@
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.pictureBox1);
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.listBox2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(778, 438);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Запись";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(381, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 27);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Записаться";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(11, 67);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(670, 329);
-            this.listBox2.TabIndex = 0;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TatooParlolForms.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(505, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 27);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Отменить запись";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -299,7 +300,8 @@
             // файлToolStripMenuItem1
             // 
             this.файлToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.сохранитьToolStripMenuItem1});
+            this.сохранитьToolStripMenuItem1,
+            this.загрузитьToolStripMenuItem});
             this.файлToolStripMenuItem1.Name = "файлToolStripMenuItem1";
             this.файлToolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem1.Text = "Файл";
@@ -310,6 +312,13 @@
             this.сохранитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem1.Text = "Сохранить";
             this.сохранитьToolStripMenuItem1.Click += new System.EventHandler(this.сохранитьToolStripMenuItem1_Click);
+            // 
+            // загрузитьToolStripMenuItem
+            // 
+            this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.загрузитьToolStripMenuItem.Text = "Загрузить";
+            this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.загрузитьToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -326,9 +335,9 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Master3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Master1)).EndInit();
-            this.tabPage1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage1.ResumeLayout(false);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -362,6 +371,7 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem загрузитьToolStripMenuItem;
     }
 }
 

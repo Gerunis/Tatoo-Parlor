@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,25 +25,25 @@ namespace TatooParlolForms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var ofd = new OpenFileDialog() { Filter = "Фотография|*.jpg" };
-            var dr = ofd.ShowDialog(this);
-            if (dr == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(ofd.FileName);
-            }
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    var ofd = new OpenFileDialog() { Filter = "Фотография|*.jpg" };
+        //    var dr = ofd.ShowDialog(this);
+        //    if (dr == DialogResult.OK)
+        //    {
+        //        pictureBox1.Image = Image.FromFile(ofd.FileName);
+        //    }
+        //}
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            var ofd = new OpenFileDialog() { Filter = "Фотография|*.jpg" };
-            var dr = ofd.ShowDialog(this);
-            if (dr == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(ofd.FileName);
-            }
-        }
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+        //    var ofd = new OpenFileDialog() { Filter = "Фотография|*.jpg" };
+        //    var dr = ofd.ShowDialog(this);
+        //    if (dr == DialogResult.OK)
+        //    {
+        //        pictureBox1.Image = Image.FromFile(ofd.FileName);
+        //    }
+        //}
         private void Form3_Load(object sender, EventArgs e)
         {
             textBox1.Text = Registration.VisitorName;
@@ -52,6 +54,8 @@ namespace TatooParlolForms
             comboBox2.SelectedItem = Registration.BodyPart;
             comboBox4.SelectedItem = Registration.Master;
             comboBox3.SelectedItem = Registration.TatooStyles;
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -64,28 +68,8 @@ namespace TatooParlolForms
             Registration.BodyPart = comboBox2.SelectedItem.ToString();
             Registration.Master = comboBox4.SelectedItem.ToString();
             Registration.TatooStyles = comboBox3.SelectedItem.ToString();
-            //Registration.Drawing = pictureBox1.;
 
-            //Tatoo.Drawing = pictureBox1.Image.
-
-            //switch (comboBox2.SelectedValue?.ToString())
-            //{
-//                Спина
-//Ноги
-//Руки
-//Шея
-//Плечи
-//Лицо
-                //case "Спина":
-                //    spaceShip.ShipType = ShipType.Civil;
-                //    break;
-                //case "Военный корабль":
-                //    spaceShip.ShipType = ShipType.Military;
-                //    break;
-                //default:
-                //    spaceShip.ShipType = ShipType.Cargo;
-                //    break;
-        //}
+            
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
